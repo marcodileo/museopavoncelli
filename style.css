@@ -1,0 +1,52 @@
+body {
+  background: #fafafa;
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 1rem;
+  -webkit-user-select: none; /* Chrome, Opera, Safari */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+}
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 6vmax;
+  margin: 4vmin;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+img {
+  height: 38vmin;
+  margin: 4vmin;
+  margin-bottom: 0;
+}
+.social{
+  font-size:2rem;
+  padding-top:1rem;
+  padding-bottom:2rem;
+}
+.corpo {
+  text-align: center;
+  color: gray;
+  font-size: 1em;
+  line-height: 150%;
+  margin: 4vmin;
+ }
+.footer {
+  text-align: center;
+}
+a:link {
+    color: black;
+  text-decoration: none;
+}
+a:visited {
+    color: black;
+  text-decoration: none;
+}
+.fa:hover {
+    opacity: 1;
+  }
+.fa {
+  padding: 0.5rem;
+  opacity: 0.6;
+  }
+
