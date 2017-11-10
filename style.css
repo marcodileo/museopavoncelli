@@ -24,11 +24,13 @@ img {
   padding-bottom:2rem;
 }
 .corpo {
-  text-align: center;
   color: gray;
-  font-size: 1em;
   line-height: 150%;
   margin: 4vmin;
+ }
+.pren {
+  color: black;
+  margin-top: 2rem;
  }
 .footer {
   text-align: center;
@@ -41,11 +43,6 @@ a:visited {
     color: black;
   text-decoration: none;
 }
-.fa:hover {
-    opacity: 1;
-  }
 .fa {
   padding: 0.5rem;
-  opacity: 0.6;
   }
-
