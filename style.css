@@ -25,6 +25,7 @@ img {
   padding-bottom:2rem;
 }
 .corpo {
+  font-family: 'Varela Round', sans-serif;
   color: gray;
   line-height: 150%;
   margin-top: 4vmin;
