@@ -1,2 +1,0 @@
-# museopavoncelli
-Museo Pavoncelli
