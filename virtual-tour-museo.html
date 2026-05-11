@@ -299,41 +299,7 @@ $(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSep
 						</div>
 						</div><div id="imCell_19" class=""> <div id="imCellStyleGraphics_19" ></div><div id="imCellStyleBorders_19"></div><!-- Simple Separator v.2 --><div id="pluginAppObj_6_19" style="direction: ltr;">
 						            <div style="width: 100%; height: 30px"></div>
-						        </div></div><div id="imPageRow_6" class="imPageRow">
-						
-						</div>
-						<div id="imCell_20" class=""> <div id="imCellStyleGraphics_20" ></div><div id="imCellStyleBorders_20"></div><!-- Simple Separator v.2 --><div id="pluginAppObj_6_20" style="direction: ltr;">
-						            <div style="width: 100%; height: 30px"></div>
-						        </div></div><div id="imCell_21" class=""> <div id="condividi-esperienza"></div><div id="imCellStyleGraphics_21" ></div><div id="imCellStyleBorders_21"></div><div id="imCellStyleTitle_21">Condividi la tua esperienza</div><div id="imTextObject_6_21">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_6_21_tab0" style="opacity: 1; " role="tabpanel" tabindex="0">
-								<div class="text-inner">
-									<p>Dopo aver esplorato il Museo Pavoncelli con il virtual tour, racconta la tua esperienza: che cosa ti ha colpito di più? Quale ambiente vorresti vedere dal vivo?</p><p>Puoi condividere le tue impressioni con la tua classe, con il tuo gruppo o con amici e familiari, oppure lasciare un commento qui accanto. Il tuo feedback ci aiuta a migliorare l’esperienza di visita, digitale e in presenza.</p>
-								</div>
-							</div>
-						
-						</div>
-						</div><div id="imCell_22" class=""> <div id="imCellStyleGraphics_22" ></div><div id="imCellStyleBorders_22"></div><div id="GuestBookObject_6_22">
-						<?php
-						$outputID = 'x5gb622';$gb = new ImTopic($outputID, 'GuestBookObject_6_22', '', '', array(), false);
-						$gb->setCommentsPerPage(10);
-						$gb->setTitle('Virtual tour');
-						$gb->loadXML(pathCombine(array($imSettings['general']['public_folder'], '')));
-						$gb->showSummary(
-						  true, // $ratingAndStars 
-						  false, // $admin 
-						  true, // $hideifempty 
-						  "guestbook" // $type 
-						);
-						$newMessage = $gb->checkNewMessages(false, '', 'guestbook', $imSettings['general']['url'] . 'admin/guestbook.php?id=' . $outputID);
-						if ($newMessage && $imSettings['admin']['enable_notifications']) {
-							Configuration::getNotifier()->sendNotification('pages_comments', $imSettings['guestbooks'][$outputID]['pagetitle'], l10n('pages_new_comment_notification_body', 'You received a new comment'), 'guestbook.php?id=' . $outputID);
-						}
-						$gb->showForm(true, false, false, '', 'guestbook', $imSettings['general']['url'] . 'admin/guestbook.php?id=' . $outputID);
-						$gb->showComments(true, 'asc', false, true);
-						$ratingsData = $gb->getRatingsDataSummary();
-						?>
-						<script>x5engine.boot.push('x5engine.topic({ target: \'#GuestBookObject_6_22\' })', false, 6);</script>
-						</div>
+						        </div></div>
 						</div><div id="imCell_23" class=""> <div id="imCellStyleGraphics_23" ></div><div id="imCellStyleBorders_23"></div><!-- Simple Separator v.2 --><div id="pluginAppObj_6_23" style="direction: ltr;">
 						            <div style="width: 100%; height: 30px"></div>
 						        </div></div>
